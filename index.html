@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Andrea Festi - Excel & VBA Automation Specialist. Custom macros, formulas, and business process automation.">
+    <title>Andrea Festi | Excel & VBA Specialist</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">Andrea Festi</a>
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <ul class="nav-menu">
+                <li><a href="#about" data-i18n="nav.about">About</a></li>
+                <li><a href="#services" data-i18n="nav.services">Services</a></li>
+                <li><a href="#portfolio" data-i18n="nav.portfolio">Portfolio</a></li>
+                <li><a href="#testimonials" data-i18n="nav.testimonials">Testimonials</a></li>
+                <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
+                <li>
+                    <button class="lang-toggle" id="langToggle">
+                        <span class="lang-flag">🇮🇹</span>
+                        <span class="lang-text">IT</span>
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero" id="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">Andrea Festi</h1>
+                <p class="hero-subtitle" data-i18n="hero.subtitle">Excel & VBA Automation Specialist</p>
+                <p class="hero-description" data-i18n="hero.description">
+                    I help businesses save time and reduce errors through custom Excel solutions, 
+                    VBA macros, and intelligent automation.
+                </p>
+                <div class="hero-cta">
+                    <a href="#contact" class="btn btn-primary" data-i18n="hero.cta.primary">Get in Touch</a>
+                    <a href="#services" class="btn btn-secondary" data-i18n="hero.cta.secondary">View Services</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="hero-image-placeholder">
+                    <img src="images/profile.jpg" alt="Andrea Festi" onerror="this.style.display='none'; this.parentElement.innerHTML='<div class=\'avatar-fallback\'>AF</div>'">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section class="section about" id="about">
+        <div class="container">
+            <h2 class="section-title" data-i18n="about.title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p data-i18n="about.intro">
+                        Hi, I'm Andrea Festi — a passionate Excel and VBA specialist with years of experience 
+                        helping businesses streamline their workflows and automate repetitive tasks.
+                    </p>
+                    <p data-i18n="about.experience">
+                        My expertise spans from creating complex formulas and pivot tables to developing 
+                        full-scale VBA applications that transform how companies handle their data.
+                    </p>
+                    <p data-i18n="about.mission">
+                        I believe that powerful automation shouldn't be complicated. My mission is to deliver 
+                        clean, efficient, and user-friendly solutions that anyone can use.
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <span class="stat-number">100+</span>
+                            <span class="stat-label" data-i18n="about.stats.projects">Projects Completed</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">50+</span>
+                            <span class="stat-label" data-i18n="about.stats.clients">Happy Clients</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">5★</span>
+                            <span class="stat-label" data-i18n="about.stats.rating">Fiverr Rating</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="section services" id="services">
+        <div class="container">
+            <h2 class="section-title" data-i18n="services.title">Services</h2>
+            <p class="section-subtitle" data-i18n="services.subtitle">
+                Tailored Excel solutions to boost your productivity
+            </p>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">📊</div>
+                    <h3 data-i18n="services.macros.title">Excel Macros</h3>
+                    <p data-i18n="services.macros.description">
+                        Custom VBA macros to automate repetitive tasks and save hours of manual work every week.
+                    </p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">⚡</div>
+                    <h3 data-i18n="services.vba.title">VBA Development</h3>
+                    <p data-i18n="services.vba.description">
+                        Full-scale VBA applications with user forms, automated reports, and database integration.
+                    </p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🔢</div>
+                    <h3 data-i18n="services.formulas.title">Advanced Formulas</h3>
+                    <p data-i18n="services.formulas.description">
+                        Complex formulas, array functions, and dynamic calculations for powerful spreadsheets.
+                    </p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🤖</div>
+                    <h3 data-i18n="services.automation.title">Process Automation</h3>
+                    <p data-i18n="services.automation.description">
+                        End-to-end automation of business processes, from data entry to report generation.
+                    </p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">📈</div>
+                    <h3 data-i18n="services.dashboards.title">Dashboards</h3>
+                    <p data-i18n="services.dashboards.description">
+                        Interactive dashboards and visualizations to monitor KPIs and make data-driven decisions.
+                    </p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🔧</div>
+                    <h3 data-i18n="services.fixes.title">Spreadsheet Fixes</h3>
+                    <p data-i18n="services.fixes.description">
+                        Debug, optimize, and fix existing spreadsheets to improve performance and reliability.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="section portfolio" id="portfolio">
+        <div class="container">
+            <h2 class="section-title" data-i18n="portfolio.title">Portfolio</h2>
+            <p class="section-subtitle" data-i18n="portfolio.subtitle">
+                Some examples of my recent work
+            </p>
+            <div class="portfolio-grid">
+                <div class="portfolio-card">
+                    <div class="portfolio-image">
+                        <div class="portfolio-placeholder">📊</div>
+                    </div>
+                    <div class="portfolio-content">
+                        <span class="portfolio-tag" data-i18n="portfolio.tags.automation">Automation</span>
+                        <h3 data-i18n="portfolio.project1.title">Inventory Management System</h3>
+                        <p data-i18n="portfolio.project1.description">
+                            Automated inventory tracking with real-time updates, alerts, and reporting.
+                        </p>
+                    </div>
+                </div>
+                <div class="portfolio-card">
+                    <div class="portfolio-image">
+                        <div class="portfolio-placeholder">📈</div>
+                    </div>
+                    <div class="portfolio-content">
+                        <span class="portfolio-tag" data-i18n="portfolio.tags.dashboard">Dashboard</span>
+                        <h3 data-i18n="portfolio.project2.title">Sales Analytics Dashboard</h3>
+                        <p data-i18n="portfolio.project2.description">
+                            Interactive dashboard with dynamic charts, filters, and automated data refresh.
+                        </p>
+                    </div>
+                </div>
+                <div class="portfolio-card">
+                    <div class="portfolio-image">
+                        <div class="portfolio-placeholder">🔄</div>
+                    </div>
+                    <div class="portfolio-content">
+                        <span class="portfolio-tag" data-i18n="portfolio.tags.vba">VBA</span>
+                        <h3 data-i18n="portfolio.project3.title">Invoice Generator</h3>
+                        <p data-i18n="portfolio.project3.description">
+                            One-click invoice creation with PDF export, email integration, and payment tracking.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="section testimonials" id="testimonials">
+        <div class="container">
+            <h2 class="section-title" data-i18n="testimonials.title">What Clients Say</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p class="testimonial-text" data-i18n="testimonials.review1.text">
+                        "Andrea delivered exactly what I needed. The macro he created saves me 3 hours every day. 
+                        Highly recommended!"
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">JD</div>
+                        <div class="author-info">
+                            <span class="author-name">John D.</span>
+                            <span class="author-title" data-i18n="testimonials.review1.title">Business Owner</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p class="testimonial-text" data-i18n="testimonials.review2.text">
+                        "Exceptional work! Andrea understood my requirements perfectly and delivered a solution 
+                        that exceeded my expectations."
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">SM</div>
+                        <div class="author-info">
+                            <span class="author-name">Sarah M.</span>
+                            <span class="author-title" data-i18n="testimonials.review2.title">Project Manager</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p class="testimonial-text" data-i18n="testimonials.review3.text">
+                        "Fast, professional, and incredibly skilled. Andrea transformed our messy spreadsheet 
+                        into an automated masterpiece."
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">MK</div>
+                        <div class="author-info">
+                            <span class="author-name">Mike K.</span>
+                            <span class="author-title" data-i18n="testimonials.review3.title">Finance Director</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section faq" id="faq">
+        <div class="container">
+            <h2 class="section-title" data-i18n="faq.title">Frequently Asked Questions</h2>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span data-i18n="faq.q1.question">How long does a typical project take?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p data-i18n="faq.q1.answer">
+                            Most projects are completed within 1-5 days depending on complexity. 
+                            Simple macros can be done in 24 hours, while larger automation projects may take up to a week.
+                        </p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span data-i18n="faq.q2.question">Do you offer revisions?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p data-i18n="faq.q2.answer">
+                            Yes! I offer unlimited revisions until you're 100% satisfied with the result. 
+                            Your satisfaction is my priority.
+                        </p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span data-i18n="faq.q3.question">Can you work with my existing spreadsheets?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p data-i18n="faq.q3.answer">
+                            Absolutely! I can optimize, debug, or add new features to your existing Excel files 
+                            without disrupting your current workflow.
+                        </p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span data-i18n="faq.q4.question">What information do you need to start?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p data-i18n="faq.q4.answer">
+                            Just send me a description of what you need, sample files if available, 
+                            and any specific requirements. I'll provide a quote and timeline within 24 hours.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact" id="contact">
+        <div class="container">
+            <h2 class="section-title" data-i18n="contact.title">Get in Touch</h2>
+            <p class="section-subtitle" data-i18n="contact.subtitle">
+                Ready to automate your workflow? Let's talk!
+            </p>
+            <div class="contact-content">
+                <form class="contact-form" action="https://formspree.io/f/yourformid" method="POST">
+                    <div class="form-group">
+                        <label for="name" data-i18n="contact.form.name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email" data-i18n="contact.form.email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message" data-i18n="contact.form.message">Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary" data-i18n="contact.form.submit">Send Message</button>
+                </form>
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <h3 data-i18n="contact.other.title">Other Ways to Reach Me</h3>
+                        <div class="contact-links">
+                            <a href="https://it.fiverr.com/andrea_festi" target="_blank" class="contact-link">
+                                <span class="contact-icon">💼</span>
+                                <span>Fiverr</span>
+                            </a>
+                            <a href="https://www.linkedin.com/in/andreafesti/" target="_blank" class="contact-link">
+                                <span class="contact-icon">👔</span>
+                                <span>LinkedIn</span>
+                            </a>
+                            <a href="mailto:festi.andrea@gmail.com" class="contact-link">
+                                <span class="contact-icon">✉️</span>
+                                <span>festi.andrea@gmail.com</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <span class="logo">Andrea Festi</span>
+                    <p data-i18n="footer.tagline">Excel & VBA Automation Specialist</p>
+                </div>
+                <div class="footer-links">
+                    <a href="https://it.fiverr.com/andrea_festi" target="_blank">Fiverr</a>
+                    <a href="https://www.linkedin.com/in/andreafesti/" target="_blank">LinkedIn</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Andrea Festi. <span data-i18n="footer.rights">All rights reserved.</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/translations.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
