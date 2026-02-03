@@ -32,7 +32,5 @@ function renderFooter() {
     }
 }
 
-// Auto-render footer when script loads
-document.addEventListener('DOMContentLoaded', () => {
-    renderFooter();
-});
+// Render footer immediately when script runs (synchronous)
+renderFooter();

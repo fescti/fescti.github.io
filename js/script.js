@@ -44,6 +44,11 @@ function setLanguage(lang) {
 document.addEventListener('DOMContentLoaded', () => {
     setLanguage(currentLang);
     
+    // Parse emoji with Twemoji for cross-platform support (initial load)
+    if (typeof twemoji !== 'undefined') {
+        twemoji.parse(document.body, { folder: 'svg', ext: '.svg' });
+    }
+    
     // Language toggle click handler
     const langToggle = document.getElementById('langToggle');
     if (langToggle) {
