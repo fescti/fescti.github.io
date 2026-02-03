@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@twemoji/api@latest/dist/twemoji.min.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <!-- Navigation -->
@@ -19,11 +20,11 @@
                 <span class="hamburger"></span>
             </button>
             <ul class="nav-menu">
-                <li><a href="#about" data-i18n="nav.about">About</a></li>
-                <li><a href="#services" data-i18n="nav.services">Services</a></li>
-                <li><a href="#portfolio" data-i18n="nav.portfolio">Portfolio</a></li>
-                <li><a href="#testimonials" data-i18n="nav.testimonials">Testimonials</a></li>
-                <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
+                <li><a href="about.html" data-i18n="nav.about">About</a></li>
+                <li><a href="services.html" data-i18n="nav.services">Services</a></li>
+                <li><a href="portfolio.html" data-i18n="nav.portfolio">Portfolio</a></li>
+                <li><a href="index.html#testimonials" data-i18n="nav.testimonials">Testimonials</a></li>
+                <li><a href="index.html#contact" data-i18n="nav.contact">Contact</a></li>
                 <li>
                     <button class="lang-toggle" id="langToggle">
                         <span class="lang-flag">🇮🇹</span>
@@ -46,7 +47,7 @@
                 </p>
                 <div class="hero-cta">
                     <a href="#contact" class="btn btn-primary" data-i18n="hero.cta.primary">Get in Touch</a>
-                    <a href="#services" class="btn btn-secondary" data-i18n="hero.cta.secondary">View Services</a>
+                    <a href="services.html" class="btn btn-secondary" data-i18n="hero.cta.secondary">View Services</a>
                 </div>
             </div>
             <div class="hero-image">
@@ -144,6 +145,9 @@
                         Debug, optimize, and fix existing spreadsheets to improve performance and reliability.
                     </p>
                 </div>
+            </div>
+            <div class="section-cta">
+                <a href="services.html" class="btn btn-primary" data-i18n="services.viewall">View All Services</a>
             </div>
         </div>
     </section>
@@ -327,49 +331,15 @@
                     </div>
                     <button type="submit" class="btn btn-primary" data-i18n="contact.form.submit">Send Message</button>
                 </form>
-                <div class="contact-info">
-                    <div class="contact-card">
-                        <h3 data-i18n="contact.other.title">Other Ways to Reach Me</h3>
-                        <div class="contact-links">
-                            <a href="https://it.fiverr.com/andrea_festi" target="_blank" class="contact-link">
-                                <span class="contact-icon">💼</span>
-                                <span>Fiverr</span>
-                            </a>
-                            <a href="https://www.linkedin.com/in/andreafesti/" target="_blank" class="contact-link">
-                                <span class="contact-icon">👔</span>
-                                <span>LinkedIn</span>
-                            </a>
-                            <a href="mailto:festi.andrea@gmail.com" class="contact-link">
-                                <span class="contact-icon">✉️</span>
-                                <span>festi.andrea@gmail.com</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-brand">
-                    <span class="logo">Andrea Festi</span>
-                    <p data-i18n="footer.tagline">Excel & VBA Automation Specialist</p>
-                </div>
-                <div class="footer-links">
-                    <a href="https://it.fiverr.com/andrea_festi" target="_blank">Fiverr</a>
-                    <a href="https://www.linkedin.com/in/andreafesti/" target="_blank">LinkedIn</a>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2026 Andrea Festi. <span data-i18n="footer.rights">All rights reserved.</span></p>
-            </div>
-        </div>
-    </footer>
+    <div id="footer-placeholder"></div>
 
     <script src="js/translations.js"></script>
+    <script src="js/footer.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="About Andrea Festi - Excel & VBA Automation Specialist with years of experience helping businesses streamline workflows.">
+    <title>About Me | Andrea Festi - Excel & VBA Specialist</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@twemoji/api@latest/dist/twemoji.min.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">Andrea Festi</a>
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <ul class="nav-menu">
+                <li><a href="about.html" class="active" data-i18n="nav.about">About</a></li>
+                <li><a href="services.html" data-i18n="nav.services">Services</a></li>
+                <li><a href="portfolio.html" data-i18n="nav.portfolio">Portfolio</a></li>
+                <li><a href="index.html#testimonials" data-i18n="nav.testimonials">Testimonials</a></li>
+                <li><a href="index.html#contact" data-i18n="nav.contact">Contact</a></li>
+                <li>
+                    <button class="lang-toggle" id="langToggle">
+                        <span class="lang-flag">🇮🇹</span>
+                        <span class="lang-text">IT</span>
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1 class="page-title" data-i18n="about.page.title">About Me</h1>
+            <p class="page-subtitle" data-i18n="about.page.subtitle">
+                Passionate about turning complex data into simple solutions
+            </p>
+        </div>
+    </section>
+
+    <!-- About Detail Section -->
+    <section class="section about-detail">
+        <div class="container">
+            <div class="about-detail-grid">
+                <div class="about-detail-image">
+                    <div class="about-image-placeholder">
+                        <img src="images/profile.jpg" alt="Andrea Festi" onerror="this.style.display='none'; this.parentElement.innerHTML='<div class=\'avatar-fallback-large\'>AF</div>'">
+                    </div>
+                </div>
+                <div class="about-detail-content">
+                    <h2 data-i18n="about.detail.greeting">Hi, I'm Andrea!</h2>
+                    <p data-i18n="about.detail.intro">
+                        I'm an Excel and VBA specialist with a passion for automation and data analysis. For years, I've been helping businesses of all sizes transform their messy spreadsheets into powerful, automated tools that save time and reduce errors.
+                    </p>
+                    <p data-i18n="about.detail.background">
+                        My journey started when I discovered the power of VBA to automate repetitive tasks in my own work. Since then, I've completed over 100 projects for clients worldwide, from small business owners to large corporations.
+                    </p>
+                    <p data-i18n="about.detail.approach">
+                        I believe that great automation should be invisible — it should just work. That's why I focus on creating solutions that are not only powerful but also easy to use, even for people who aren't tech-savvy.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section skills-section">
+        <div class="container">
+            <h2 class="section-title" data-i18n="about.skills.title">My Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-icon">📊</div>
+                    <h3 data-i18n="about.skills.excel.title">Microsoft Excel</h3>
+                    <p data-i18n="about.skills.excel.description">Advanced formulas, pivot tables, Power Query, and data modeling</p>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 98%"></div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">⚡</div>
+                    <h3 data-i18n="about.skills.vba.title">VBA Programming</h3>
+                    <p data-i18n="about.skills.vba.description">Custom macros, UserForms, API integrations, and automation</p>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 95%"></div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">🗄️</div>
+                    <h3 data-i18n="about.skills.database.title">Database Integration</h3>
+                    <p data-i18n="about.skills.database.description">SQL Server, Access, MySQL connectivity and data management</p>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 85%"></div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">📈</div>
+                    <h3 data-i18n="about.skills.visualization.title">Data Visualization</h3>
+                    <p data-i18n="about.skills.visualization.description">Interactive dashboards, charts, and visual reporting</p>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 90%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="section stats-section">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <span class="stat-number-large">100+</span>
+                    <span class="stat-label" data-i18n="about.stats.projects">Projects Completed</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number-large">50+</span>
+                    <span class="stat-label" data-i18n="about.stats.clients">Happy Clients</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number-large">5★</span>
+                    <span class="stat-label" data-i18n="about.stats.rating">Fiverr Rating</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number-large">5+</span>
+                    <span class="stat-label" data-i18n="about.stats.years">Years Experience</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Me Section -->
+    <section class="section why-me-section">
+        <div class="container">
+            <h2 class="section-title" data-i18n="about.whyme.title">Why Work With Me?</h2>
+            <div class="why-me-grid">
+                <div class="why-me-card">
+                    <div class="why-me-icon">🎯</div>
+                    <h3 data-i18n="about.whyme.quality.title">Quality First</h3>
+                    <p data-i18n="about.whyme.quality.description">Every solution is thoroughly tested and optimized for performance and reliability.</p>
+                </div>
+                <div class="why-me-card">
+                    <div class="why-me-icon">⏱️</div>
+                    <h3 data-i18n="about.whyme.fast.title">Fast Delivery</h3>
+                    <p data-i18n="about.whyme.fast.description">Most projects are completed within 1-5 days, without compromising on quality.</p>
+                </div>
+                <div class="why-me-card">
+                    <div class="why-me-icon">💬</div>
+                    <h3 data-i18n="about.whyme.communication.title">Clear Communication</h3>
+                    <p data-i18n="about.whyme.communication.description">I keep you updated throughout the project and explain everything in simple terms.</p>
+                </div>
+                <div class="why-me-card">
+                    <div class="why-me-icon">🔄</div>
+                    <h3 data-i18n="about.whyme.revisions.title">Unlimited Revisions</h3>
+                    <p data-i18n="about.whyme.revisions.description">I work until you're 100% satisfied. Your success is my priority.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section cta-section">
+        <div class="container">
+            <h2 data-i18n="about.cta.title">Let's Work Together!</h2>
+            <p data-i18n="about.cta.description">
+                Ready to transform your Excel workflow? Get in touch and let's discuss your project.
+            </p>
+            <a href="index.html#contact" class="btn btn-primary btn-lg" data-i18n="about.cta.button">Contact Me</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <div id="footer-placeholder"></div>
+
+    <script src="js/translations.js"></script>
+    <script src="js/footer.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

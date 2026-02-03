@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Andrea Festi Portfolio - Examples of Excel automation, VBA development, dashboards, and business solutions.">
+    <title>Portfolio | Andrea Festi - Excel & VBA Specialist</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@twemoji/api@latest/dist/twemoji.min.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">Andrea Festi</a>
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <ul class="nav-menu">
+                <li><a href="about.html" data-i18n="nav.about">About</a></li>
+                <li><a href="services.html" data-i18n="nav.services">Services</a></li>
+                <li><a href="portfolio.html" class="active" data-i18n="nav.portfolio">Portfolio</a></li>
+                <li><a href="index.html#testimonials" data-i18n="nav.testimonials">Testimonials</a></li>
+                <li><a href="index.html#contact" data-i18n="nav.contact">Contact</a></li>
+                <li>
+                    <button class="lang-toggle" id="langToggle">
+                        <span class="lang-flag">🇮🇹</span>
+                        <span class="lang-text">IT</span>
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1 class="page-title" data-i18n="portfolio.page.title">My Portfolio</h1>
+            <p class="page-subtitle" data-i18n="portfolio.page.subtitle">
+                A showcase of my Excel and VBA projects
+            </p>
+        </div>
+    </section>
+
+    <!-- Portfolio Filter -->
+    <section class="section portfolio-detail">
+        <div class="container">
+            <div class="portfolio-filters">
+                <button class="filter-btn active" data-filter="all" data-i18n="portfolio.filter.all">All Projects</button>
+                <button class="filter-btn" data-filter="automation" data-i18n="portfolio.filter.automation">Automation</button>
+                <button class="filter-btn" data-filter="dashboard" data-i18n="portfolio.filter.dashboard">Dashboards</button>
+                <button class="filter-btn" data-filter="vba" data-i18n="portfolio.filter.vba">VBA</button>
+            </div>
+
+            <div class="portfolio-detail-grid">
+                <!-- Project 1 -->
+                <div class="portfolio-detail-card" data-category="automation">
+                    <div class="portfolio-detail-image">
+                        <div class="portfolio-placeholder-large">📊</div>
+                    </div>
+                    <div class="portfolio-detail-content">
+                        <div class="portfolio-tags">
+                            <span class="portfolio-tag" data-i18n="portfolio.tags.automation">Automation</span>
+                            <span class="portfolio-tag tag-secondary" data-i18n="portfolio.tags.vba">VBA</span>
+                        </div>
+                        <h3 data-i18n="portfolio.project1.title">Inventory Management System</h3>
+                        <p data-i18n="portfolio.project1.full">
+                            A comprehensive inventory tracking system built entirely in Excel with VBA. Features include real-time stock updates, automatic reorder alerts, barcode scanning integration, and detailed reporting with historical data analysis.
+                        </p>
+                        <ul class="portfolio-features">
+                            <li data-i18n="portfolio.project1.feature1">Real-time inventory tracking</li>
+                            <li data-i18n="portfolio.project1.feature2">Automatic low-stock alerts</li>
+                            <li data-i18n="portfolio.project1.feature3">Barcode scanner integration</li>
+                            <li data-i18n="portfolio.project1.feature4">Monthly and yearly reports</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="portfolio-detail-card" data-category="dashboard">
+                    <div class="portfolio-detail-image">
+                        <div class="portfolio-placeholder-large">📈</div>
+                    </div>
+                    <div class="portfolio-detail-content">
+                        <div class="portfolio-tags">
+                            <span class="portfolio-tag" data-i18n="portfolio.tags.dashboard">Dashboard</span>
+                        </div>
+                        <h3 data-i18n="portfolio.project2.title">Sales Analytics Dashboard</h3>
+                        <p data-i18n="portfolio.project2.full">
+                            An interactive sales dashboard that provides instant insights into revenue, trends, and team performance. Features dynamic charts, slicers for filtering, and automatic data refresh from external sources.
+                        </p>
+                        <ul class="portfolio-features">
+                            <li data-i18n="portfolio.project2.feature1">Dynamic interactive charts</li>
+                            <li data-i18n="portfolio.project2.feature2">Multi-dimensional filtering</li>
+                            <li data-i18n="portfolio.project2.feature3">Automatic data refresh</li>
+                            <li data-i18n="portfolio.project2.feature4">KPI tracking widgets</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="portfolio-detail-card" data-category="vba">
+                    <div class="portfolio-detail-image">
+                        <div class="portfolio-placeholder-large">🔄</div>
+                    </div>
+                    <div class="portfolio-detail-content">
+                        <div class="portfolio-tags">
+                            <span class="portfolio-tag" data-i18n="portfolio.tags.vba">VBA</span>
+                            <span class="portfolio-tag tag-secondary" data-i18n="portfolio.tags.automation">Automation</span>
+                        </div>
+                        <h3 data-i18n="portfolio.project3.title">Invoice Generator</h3>
+                        <p data-i18n="portfolio.project3.full">
+                            A complete invoicing solution that generates professional invoices with one click. Includes PDF export, automatic email sending, payment tracking, and integration with accounting systems.
+                        </p>
+                        <ul class="portfolio-features">
+                            <li data-i18n="portfolio.project3.feature1">One-click invoice creation</li>
+                            <li data-i18n="portfolio.project3.feature2">PDF export functionality</li>
+                            <li data-i18n="portfolio.project3.feature3">Automatic email sending</li>
+                            <li data-i18n="portfolio.project3.feature4">Payment status tracking</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="portfolio-detail-card" data-category="automation">
+                    <div class="portfolio-detail-image">
+                        <div class="portfolio-placeholder-large">📧</div>
+                    </div>
+                    <div class="portfolio-detail-content">
+                        <div class="portfolio-tags">
+                            <span class="portfolio-tag" data-i18n="portfolio.tags.automation">Automation</span>
+                        </div>
+                        <h3 data-i18n="portfolio.project4.title">Email Report Automation</h3>
+                        <p data-i18n="portfolio.project4.full">
+                            Automated system that generates daily, weekly, and monthly reports and sends them via email to the relevant stakeholders. Supports multiple report formats and customizable scheduling.
+                        </p>
+                        <ul class="portfolio-features">
+                            <li data-i18n="portfolio.project4.feature1">Scheduled report generation</li>
+                            <li data-i18n="portfolio.project4.feature2">Outlook integration</li>
+                            <li data-i18n="portfolio.project4.feature3">Multiple format support</li>
+                            <li data-i18n="portfolio.project4.feature4">Recipient management</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="portfolio-detail-card" data-category="dashboard">
+                    <div class="portfolio-detail-image">
+                        <div class="portfolio-placeholder-large">💰</div>
+                    </div>
+                    <div class="portfolio-detail-content">
+                        <div class="portfolio-tags">
+                            <span class="portfolio-tag" data-i18n="portfolio.tags.dashboard">Dashboard</span>
+                            <span class="portfolio-tag tag-secondary" data-i18n="portfolio.tags.vba">VBA</span>
+                        </div>
+                        <h3 data-i18n="portfolio.project5.title">Financial Planning Tool</h3>
+                        <p data-i18n="portfolio.project5.full">
+                            A comprehensive financial planning and budgeting tool with scenario analysis, forecasting, and variance tracking. Helps businesses plan their finances with confidence.
+                        </p>
+                        <ul class="portfolio-features">
+                            <li data-i18n="portfolio.project5.feature1">Budget vs. actual tracking</li>
+                            <li data-i18n="portfolio.project5.feature2">Scenario analysis</li>
+                            <li data-i18n="portfolio.project5.feature3">Cash flow forecasting</li>
+                            <li data-i18n="portfolio.project5.feature4">Visual variance reports</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Project 6 -->
+                <div class="portfolio-detail-card" data-category="vba">
+                    <div class="portfolio-detail-image">
+                        <div class="portfolio-placeholder-large">🗂️</div>
+                    </div>
+                    <div class="portfolio-detail-content">
+                        <div class="portfolio-tags">
+                            <span class="portfolio-tag" data-i18n="portfolio.tags.vba">VBA</span>
+                        </div>
+                        <h3 data-i18n="portfolio.project6.title">Data Import/Export Tool</h3>
+                        <p data-i18n="portfolio.project6.full">
+                            A versatile tool for importing data from multiple sources (CSV, databases, APIs) and exporting to various formats. Includes data validation, transformation, and error handling.
+                        </p>
+                        <ul class="portfolio-features">
+                            <li data-i18n="portfolio.project6.feature1">Multi-source data import</li>
+                            <li data-i18n="portfolio.project6.feature2">Data validation rules</li>
+                            <li data-i18n="portfolio.project6.feature3">Format transformation</li>
+                            <li data-i18n="portfolio.project6.feature4">Error logging and handling</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section cta-section">
+        <div class="container">
+            <h2 data-i18n="portfolio.cta.title">Have a Similar Project?</h2>
+            <p data-i18n="portfolio.cta.description">
+                Let's discuss how I can help you achieve your automation goals.
+            </p>
+            <a href="index.html#contact" class="btn btn-primary btn-lg" data-i18n="portfolio.cta.button">Start Your Project</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <div id="footer-placeholder"></div>
+
+    <script src="js/translations.js"></script>
+    <script src="js/footer.js"></script>
+    <script src="js/script.js"></script>
+    <script>
+        // Portfolio filter functionality
+        const filterBtns = document.querySelectorAll('.filter-btn');
+        const portfolioCards = document.querySelectorAll('.portfolio-detail-card');
+        
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                filterBtns.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                const filter = btn.getAttribute('data-filter');
+                portfolioCards.forEach(card => {
+                    if (filter === 'all' || card.getAttribute('data-category') === filter) {
+                        card.style.display = 'grid';
+                        card.style.animation = 'fadeIn 0.3s ease';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

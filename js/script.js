@@ -12,7 +12,17 @@ function setLanguage(lang) {
     document.querySelectorAll('[data-i18n]').forEach(element => {
         const key = element.getAttribute('data-i18n');
         if (translations[lang] && translations[lang][key]) {
-            element.textContent = translations[lang][key];
+            // Only update text content if element has no child elements (except text nodes)
+            const hasChildElements = element.querySelector('*');
+            if (!hasChildElements) {
+                element.textContent = translations[lang][key];
+            } else {
+                // For elements with children, find text nodes and update them
+                const textNodes = Array.from(element.childNodes).filter(node => node.nodeType === Node.TEXT_NODE);
+                if (textNodes.length > 0) {
+                    textNodes[0].textContent = translations[lang][key];
+                }
+            }
         }
     });
     
@@ -22,6 +32,11 @@ function setLanguage(lang) {
         const flag = lang === 'it' ? '🇬🇧' : '🇮🇹';
         const text = lang === 'it' ? 'EN' : 'IT';
         langToggle.innerHTML = `<span class="lang-flag">${flag}</span><span class="lang-text">${text}</span>`;
+        
+        // Re-parse emoji with Twemoji for cross-platform support
+        if (typeof twemoji !== 'undefined') {
+            twemoji.parse(langToggle, { folder: 'svg', ext: '.svg' });
+        }
     }
 }
 

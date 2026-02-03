@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Andrea Festi - Excel & VBA Services. Custom macros, VBA development, advanced formulas, and business automation.">
+    <title>Services | Andrea Festi - Excel & VBA Specialist</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@twemoji/api@latest/dist/twemoji.min.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">Andrea Festi</a>
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <ul class="nav-menu">
+                <li><a href="about.html" data-i18n="nav.about">About</a></li>
+                <li><a href="services.html" class="active" data-i18n="nav.services">Services</a></li>
+                <li><a href="portfolio.html" data-i18n="nav.portfolio">Portfolio</a></li>
+                <li><a href="index.html#testimonials" data-i18n="nav.testimonials">Testimonials</a></li>
+                <li><a href="index.html#contact" data-i18n="nav.contact">Contact</a></li>
+                <li>
+                    <button class="lang-toggle" id="langToggle">
+                        <span class="lang-flag">🇮🇹</span>
+                        <span class="lang-text">IT</span>
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1 class="page-title" data-i18n="services.page.title">My Services</h1>
+            <p class="page-subtitle" data-i18n="services.page.subtitle">
+                Professional Excel and VBA solutions tailored to your business needs
+            </p>
+        </div>
+    </section>
+
+    <!-- Services Overview -->
+    <section class="section services-detail">
+        <div class="container">
+            
+            <!-- Excel Macros -->
+            <div class="service-detail-card" id="macros">
+                <div class="service-detail-icon">📊</div>
+                <div class="service-detail-content">
+                    <h2 data-i18n="services.macros.title">Excel Macros</h2>
+                    <p class="service-detail-description" data-i18n="services.macros.full">
+                        Custom VBA macros designed to automate your repetitive tasks. Whether it's data entry, formatting, or complex calculations, I create macros that save you hours of manual work every week. Each macro is thoroughly tested and comes with documentation for easy use.
+                    </p>
+                    <ul class="service-features">
+                        <li data-i18n="services.macros.feature1">One-click automation for repetitive tasks</li>
+                        <li data-i18n="services.macros.feature2">Custom keyboard shortcuts</li>
+                        <li data-i18n="services.macros.feature3">Error handling and validation</li>
+                        <li data-i18n="services.macros.feature4">Complete documentation included</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- VBA Development -->
+            <div class="service-detail-card" id="vba">
+                <div class="service-detail-icon">⚡</div>
+                <div class="service-detail-content">
+                    <h2 data-i18n="services.vba.title">VBA Development</h2>
+                    <p class="service-detail-description" data-i18n="services.vba.full">
+                        Full-scale VBA applications that transform Excel into a powerful business tool. From custom user interfaces to database integration, I develop professional-grade solutions that streamline your operations and boost productivity.
+                    </p>
+                    <ul class="service-features">
+                        <li data-i18n="services.vba.feature1">Custom UserForms and interfaces</li>
+                        <li data-i18n="services.vba.feature2">Database connectivity (SQL, Access)</li>
+                        <li data-i18n="services.vba.feature3">Automated email and report generation</li>
+                        <li data-i18n="services.vba.feature4">Multi-workbook automation</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Advanced Formulas -->
+            <div class="service-detail-card" id="formulas">
+                <div class="service-detail-icon">🔢</div>
+                <div class="service-detail-content">
+                    <h2 data-i18n="services.formulas.title">Advanced Formulas</h2>
+                    <p class="service-detail-description" data-i18n="services.formulas.full">
+                        Complex Excel formulas that handle sophisticated calculations and data analysis. I specialize in array formulas, dynamic ranges, and nested functions that make your spreadsheets powerful yet maintainable.
+                    </p>
+                    <ul class="service-features">
+                        <li data-i18n="services.formulas.feature1">Dynamic arrays and spill ranges</li>
+                        <li data-i18n="services.formulas.feature2">XLOOKUP, INDEX/MATCH combinations</li>
+                        <li data-i18n="services.formulas.feature3">Conditional aggregations</li>
+                        <li data-i18n="services.formulas.feature4">Formula optimization for performance</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Process Automation -->
+            <div class="service-detail-card" id="automation">
+                <div class="service-detail-icon">🤖</div>
+                <div class="service-detail-content">
+                    <h2 data-i18n="services.automation.title">Process Automation</h2>
+                    <p class="service-detail-description" data-i18n="services.automation.full">
+                        End-to-end automation of your business workflows. From data collection to final reports, I design systems that run automatically, reducing human error and freeing your team to focus on high-value tasks.
+                    </p>
+                    <ul class="service-features">
+                        <li data-i18n="services.automation.feature1">Scheduled task execution</li>
+                        <li data-i18n="services.automation.feature2">Multi-system data integration</li>
+                        <li data-i18n="services.automation.feature3">Automatic report generation</li>
+                        <li data-i18n="services.automation.feature4">Email notifications and alerts</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Dashboards -->
+            <div class="service-detail-card" id="dashboards">
+                <div class="service-detail-icon">📈</div>
+                <div class="service-detail-content">
+                    <h2 data-i18n="services.dashboards.title">Dashboards</h2>
+                    <p class="service-detail-description" data-i18n="services.dashboards.full">
+                        Interactive Excel dashboards that give you instant visibility into your business metrics. With dynamic charts, slicers, and real-time data updates, you'll always have the insights you need to make informed decisions.
+                    </p>
+                    <ul class="service-features">
+                        <li data-i18n="services.dashboards.feature1">Interactive charts and visualizations</li>
+                        <li data-i18n="services.dashboards.feature2">Slicers and timeline filters</li>
+                        <li data-i18n="services.dashboards.feature3">KPI tracking and monitoring</li>
+                        <li data-i18n="services.dashboards.feature4">Automatic data refresh</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Spreadsheet Fixes -->
+            <div class="service-detail-card" id="fixes">
+                <div class="service-detail-icon">🔧</div>
+                <div class="service-detail-content">
+                    <h2 data-i18n="services.fixes.title">Spreadsheet Fixes</h2>
+                    <p class="service-detail-description" data-i18n="services.fixes.full">
+                        Troubleshooting and optimization for existing spreadsheets. I debug broken formulas, fix VBA errors, improve performance, and enhance usability. Your files will run faster and more reliably.
+                    </p>
+                    <ul class="service-features">
+                        <li data-i18n="services.fixes.feature1">Formula debugging and correction</li>
+                        <li data-i18n="services.fixes.feature2">VBA error resolution</li>
+                        <li data-i18n="services.fixes.feature3">Performance optimization</li>
+                        <li data-i18n="services.fixes.feature4">File size reduction</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section cta-section">
+        <div class="container">
+            <h2 data-i18n="services.cta.title">Ready to Get Started?</h2>
+            <p data-i18n="services.cta.description">
+                Let's discuss your project and find the perfect solution for your needs.
+            </p>
+            <a href="index.html#contact" class="btn btn-primary btn-lg" data-i18n="services.cta.button">Contact Me</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <div id="footer-placeholder"></div>
+
+    <script src="js/translations.js"></script>
+    <script src="js/footer.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
