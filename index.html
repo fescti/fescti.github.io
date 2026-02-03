@@ -316,7 +316,13 @@
                 Ready to automate your workflow? Let's talk!
             </p>
             <div class="contact-content">
-                <form class="contact-form" action="https://formspree.io/f/yourformid" method="POST">
+                <form class="contact-form" action="https://formsubmit.co/festi.andrea@gmail.com" method="POST">
+                    <!-- FormSubmit configuration -->
+                    <input type="hidden" name="_subject" value="Nuovo messaggio dal portfolio">
+                    <input type="hidden" name="_captcha" value="true">
+                    <input type="hidden" name="_next" value="https://fescti.github.io/index.html#contact">
+                    <input type="text" name="_honey" style="display:none">
+                    
                     <div class="form-group">
                         <label for="name" data-i18n="contact.form.name">Name</label>
                         <input type="text" id="name" name="name" required>
